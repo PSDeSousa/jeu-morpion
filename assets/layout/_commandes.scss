@@ -1,0 +1,35 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/functions" as *;
+@use "../abstracts/colors" as *;
+@use "../abstracts/typography" as *;
+.commandes{
+    .row{
+        width : 100%;
+        @include flex(column, center, center);
+        .cta{
+            width : 100%;
+            @include flex(row, space-between, start);
+            flex-wrap: wrap;
+            gap : 1rem;
+            .column{
+                flex: 1 1 calc(30% - 1rem);
+            }
+            .column:nth-child(2){
+                flex: 1.33 1 calc(40% - 1rem);
+            }
+            .score-board{
+                @include flex(row, space-between, center);
+                width : 25rem;
+                .score{
+                    width: 10rem;
+                    @include flex(row, space-evenly, center);
+                    background-color: $secondary-color;
+                    p{
+                        @include title-style($primary-color,$primary-font,1.5rem);
+                    }
+                }
+            }
+        }
+    }
+}

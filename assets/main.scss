@@ -11,11 +11,14 @@
 // 3 Import des layouts
 @use "layout/header" as *;
 @use "layout/footer" as *;
+@use "layout/commandes" as *;
+@use "layout/game" as *;
 // 4 Import des composants
 @use "components/buttons/primary" as *;
 @use "components/buttons/secondary" as *;
 @use "components/buttons/terciary" as *;
 @use "components/cards/card" as *;
+@use "components/accordions/accordion" as *;
 // 5 Import des pages spécifiques
 @use "pages/home" as *;
 @use "pages/contact" as *;

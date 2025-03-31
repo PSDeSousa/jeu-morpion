@@ -3,3 +3,6 @@
 @use "../abstracts/functions" as *;
 @use "../abstracts/colors" as *;
 @use "../abstracts/typography" as *;
+footer{
+    @include flex(column, center, center);
+}

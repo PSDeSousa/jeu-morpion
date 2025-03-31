@@ -1,0 +1,56 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/functions" as *;
+@use "../abstracts/colors" as *;
+@use "../abstracts/typography" as *;
+.game{
+    .row{
+        @include flex(row, space-evenly, start);
+        .rules{
+            width : 30rem;
+            .players{
+                width: 100%;
+                @include flex(row, space-evenly, center);
+            }
+        }
+        .p1-piece{
+            width : 10rem;
+            height : 10rem;
+            border-radius : 5rem;
+            border : 10px $player-1-color solid;
+        }
+        .p2-piece{
+            width : 10rem;
+            height : 10rem;
+            border-radius : 0;
+            border : 10px $player-2-color solid;
+        }
+    }
+}
+.board{
+    @include flex(column, center, center);
+    .board-row{
+        @include flex(row, center, center);
+        .square{
+            width : 15rem;
+            height : 15rem;
+            border : 5px $terciary-color solid;
+            @include flex(column, center, center);
+            .item{
+                @include flex(column, center, center);
+            }
+        }
+        .up{
+            border-top:none;
+        }
+        .down{
+            border-bottom:none;
+        }
+        .right{
+            border-right:none;
+        }
+        .left{
+            border-left:none;
+        }
+    }
+}   

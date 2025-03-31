@@ -1,0 +1,16 @@
+/**
+**************** Polices *******************************************************
+**/
+/********** avenir ******************************/
+/** Avenir Book**/
+@font-face {
+  font-family: "Avenir Book";
+  src: url("avenir/avenir-book.ttf");
+}
+/** Avenir Black**/
+@font-face {
+  font-family: "Avenir Black";
+  src: url("avenir/avenir-black.ttf");
+}
+
+/*# sourceMappingURL=styles.css.map */
